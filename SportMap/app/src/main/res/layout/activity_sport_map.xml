@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/ll_mapRoot"
+    >
+    <LinearLayout
+        android:id="@+id/ll_mapTitleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/_454C5C"
+        android:elevation="5dp">
+        <View
+            android:id="@+id/view_statuBar2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></View>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/run"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:elevation="5dp">
+        <LinearLayout
+            android:id="@+id/ll_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="距离:"/>
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="0.00"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="速度:"/>
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="0.00"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_distance"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="经度："/>
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="0.00"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Langtde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_distance"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="纬度："/>
+
+            <TextView
+                android:id="@+id/tv_Langtde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="0.00"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_latitude"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="角度："/>
+
+            <TextView
+                android:id="@+id/tv_Direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="12dp"
+                android:text="0.00"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_latitude"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="16dp"
+                android:text="开始"/>
+
+            <TextView
+                android:id="@+id/tv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_404C5F"
+                android:textSize="16dp"
+                android:text="停止"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

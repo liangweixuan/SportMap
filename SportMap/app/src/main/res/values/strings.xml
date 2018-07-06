@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SportMap</string>
+    <string name="run">跑步</string>
+    <string name="distance_km">距离(km)</string>
+    <string name="distance">距离</string>
+    <string name="i_know">我知道了</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+
+    <string name="open_gps_tips">请打开GPS</string>
+    <string name="gps_tips_for_sport">提示</string>
+    <string name="sport_gps_tips">为了正常记录您的运动数据\r\nigetwell需要开启GPS定位功能</string>
+</resources>
